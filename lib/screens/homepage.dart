@@ -48,7 +48,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                 MaterialStateProperty.all<Color>(Colors.black),
                             backgroundColor: MaterialStateProperty.all<Color>(
                                 Color(0xff4fc3f7))),
-                        onPressed: () {},
+                        onPressed: () {
+                          print('object');
+                        },
                         child: Text('Contact Me'),
                       ),
                     ),

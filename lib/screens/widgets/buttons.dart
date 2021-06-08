@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_app/screens/about_me.dart';
+import 'package:portfolio_app/screens/experience.dart';
+import 'package:portfolio_app/screens/hobbies.dart';
+import 'package:portfolio_app/screens/social_media.dart';
 
 class Buttons extends StatefulWidget {
   @override
@@ -22,7 +26,9 @@ class _ButtonsState extends State<Buttons> {
                       MaterialStateProperty.all<Color>(Colors.black),
                   backgroundColor:
                       MaterialStateProperty.all<Color>(Color(0xff33cccc))),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(AboutMe.routeName);
+              },
               child: Text('About Me'),
             ),
           ),
@@ -37,7 +43,9 @@ class _ButtonsState extends State<Buttons> {
                       MaterialStateProperty.all<Color>(Colors.black),
                   backgroundColor:
                       MaterialStateProperty.all<Color>(Color(0xff33cccc))),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(Hobbies.routeName);
+              },
               child: Text('Hobbies'),
             ),
           ),
@@ -52,7 +60,9 @@ class _ButtonsState extends State<Buttons> {
                       MaterialStateProperty.all<Color>(Colors.black),
                   backgroundColor:
                       MaterialStateProperty.all<Color>(Color(0xff33cccc))),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(Experience.routeName);
+              },
               child: Text('Experience'),
             ),
           ),
@@ -67,7 +77,9 @@ class _ButtonsState extends State<Buttons> {
                       MaterialStateProperty.all<Color>(Colors.black),
                   backgroundColor:
                       MaterialStateProperty.all<Color>(Color(0xff33cccc))),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(SocialMedia.routeName);
+              },
               child: Text('Social Media'),
             ),
           ),
