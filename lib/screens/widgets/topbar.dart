@@ -9,7 +9,7 @@ class TopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 44, horizontal: 23),
+      padding: EdgeInsets.symmetric(vertical: 25, horizontal: 23),
       width: double.infinity,
       color: color,
       child: Column(
@@ -23,7 +23,7 @@ class TopBar extends StatelessWidget {
                   height: 150,
                   width: 150,
                   child: new Image.network(
-                      'https://drive.google.com/uc?export=view&id=1mFpSrxFWU8FWBmnpPt7HbE88vbuhC5kr'),
+                      'https://drive.google.com/uc?export=view&id=1mNahxZ3Enn4MYTU5PuV-FWEDo4yynIpT'),
                 ),
               ),
             ],
@@ -50,9 +50,31 @@ class TopBar extends StatelessWidget {
                     subtitle,
                     style: TextStyle(
                         fontSize: 25,
-                        fontStyle: FontStyle.italic,
+                        fontWeight: FontWeight.w500,
                         color: Color(0xff1c1b1a)),
-                  )
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 120),
+                    child: Text(
+                      'Java',
+                      style: TextStyle(
+                          fontSize: 23,
+                          fontWeight: FontWeight.w500,
+                          fontStyle: FontStyle.italic,
+                          color: Color(0xff1c1b1a)),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 120),
+                    child: Text(
+                      'Kotlin',
+                      style: TextStyle(
+                          fontSize: 23,
+                          fontWeight: FontWeight.w500,
+                          fontStyle: FontStyle.italic,
+                          color: Color(0xff1c1b1a)),
+                    ),
+                  ),
                 ],
               ),
             ],

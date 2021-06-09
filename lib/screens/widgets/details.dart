@@ -11,7 +11,7 @@ class Details extends StatelessWidget {
             'Welcome Everyone! This is my online porfolio. I am an aspiring developer who is trying to make his own app using Flutter.',
             style: TextStyle(
                 fontSize: 25,
-                fontStyle: FontStyle.italic,
+                fontStyle: FontStyle.normal,
                 color: Color(0xff1c1b1a))));
   }
 }

@@ -18,23 +18,22 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           TopBar(
             title: 'Arun P Madhu',
-            subtitle: 'Tech Stack',
-            color: Color(0xff39ac73),
+            subtitle: 'Tech Stack:',
+            color: Color(0xff00873e),
           ),
           Container(
-            color: Color(0xffdffffa),
+            color: Color(0xfff5f5f5),
             child: Column(
               children: [
                 const SizedBox(height: 20),
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                   Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Text("'The Work Of God Ends Here'",
-                        style: TextStyle(
-                            fontSize: 27,
-                            fontStyle: FontStyle.italic,
-                            color: Color(0xff006666))),
-                  ),
+                      padding: const EdgeInsets.all(15.0),
+                      child: Text("'The Work Of God Ends Here'",
+                          style: TextStyle(
+                              fontSize: 27,
+                              fontStyle: FontStyle.italic,
+                              color: Color(0xff006699)))),
                   Details()
                 ]),
                 Row(
